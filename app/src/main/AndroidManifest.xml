@@ -32,6 +32,11 @@
             android:exported="true">
         </activity>
 
+        <activity
+            android:name=".Categorias"
+            android:exported="true">
+        </activity>
+
 
         <meta-data
             android:name="preloaded_fonts"

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MH-Prueba2-Proyecto</string>
+    <string name="tx_cat_musica">MÚSICA</string>
+    <string name="tx_cat_religoso">RELIGIOSO</string>
+    <string name="tx_cat_deportes">DEPORTES</string>
+    <string name="tx_cat_cultura">CULTURA</string>
 </resources>
