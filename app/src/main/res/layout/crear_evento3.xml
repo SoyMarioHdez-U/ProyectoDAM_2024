@@ -15,14 +15,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:text="INFORMACIÓN SOBRE PAGOS:"
+        android:text="@string/textoTVPagos"
         android:textSize="20sp"
         android:textStyle="bold" />
     <TextView
         android:id="@+id/tvInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Establezca los precios de su evento"
+        android:text="@string/textotvInfoPagos"
         android:textSize="18sp"
         android:textStyle="normal"
         android:layout_marginStart="15dp"
@@ -35,7 +35,7 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginStart="15dp"
-        android:text="Evento gratuito"
+        android:text="@string/textoEventoGratuito"
         android:textSize="18sp"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
@@ -50,7 +50,7 @@
             android:id="@+id/tvEntradaGeneral"
             android:layout_width="160dp"
             android:layout_height="match_parent"
-            android:text="Entrada General"
+            android:text="@string/textoTVEntradaGeneral"
             android:textSize="18sp"
             android:textStyle="normal"
             android:background="@drawable/borde"
@@ -62,7 +62,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$"
+            android:text="@string/filler$"
             android:textSize="18sp"
             android:textStyle="normal"
             android:paddingStart="15dp"
@@ -75,10 +75,12 @@
             android:layout_height="50dp"
             android:background="@drawable/borde"
             android:gravity="center"
+            android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
-            android:text="8.00" />
+            android:text="@string/valorDefaultPrecioGeneral"
+            tools:ignore="LabelFor" />
 
     </LinearLayout>
 
@@ -94,7 +96,7 @@
             android:id="@+id/tvEntradaVIP"
             android:layout_width="160dp"
             android:layout_height="match_parent"
-            android:text="Entrada VIP"
+            android:text="@string/textoTVEntradaVIP"
             android:textSize="18sp"
             android:textStyle="normal"
             android:background="@drawable/borde"
@@ -106,7 +108,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$"
+            android:text="@string/filler$"
             android:textSize="18sp"
             android:textStyle="normal"
             android:paddingStart="15dp"
@@ -118,10 +120,12 @@
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:background="@drawable/borde"
+            android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
-            android:text="12.00" />
+            android:text="@string/ValorDefaultPrecioVIP"
+            tools:ignore="LabelFor" />
 
     </LinearLayout>
 
@@ -137,12 +141,21 @@
         android:id="@+id/tvAdvertencia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="El manejo de los cobros es completa responsabilidad del organizador"
+        android:text="@string/textoTVAdvertencia"
         android:textSize="18sp"
         android:textStyle="normal"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/textoBtnCrearEvento" />
 
 </LinearLayout>

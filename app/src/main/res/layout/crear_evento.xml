@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="195dp"
             android:layout_gravity="center"
-            android:contentDescription="Subir portada del evento:"
+            android:contentDescription="@string/texto_IVBannerEvento"
             android:padding="50dp"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/icono_imagen" />
@@ -31,7 +31,7 @@
             android:layout_gravity="bottom|center"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="Subir portada del evento"
+            android:text="@string/textoTVSubirPortada"
             android:textSize="20sp"
             android:textStyle="bold" />
     </FrameLayout>
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:text="DATOS DEL EVENTO:"
+        android:text="@string/textoTVDatosEvento"
         android:textSize="20sp"
         android:textStyle="bold" />
     <View
@@ -61,9 +61,11 @@
         android:layout_marginEnd="15dp"
         android:background="@color/white"
         android:ems="10"
-        android:hint="Ingrese el nombre del evento"
+        android:hint="@string/textoETNombreEvento"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:paddingStart="5dp" />
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"/>
 
     <EditText
         android:id="@+id/etLugarEvento"
@@ -74,9 +76,11 @@
         android:layout_marginEnd="15dp"
         android:background="@color/white"
         android:ems="10"
-        android:hint="Ingrese el lugar del evento"
+        android:hint="@string/textoETLugarEvento"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:paddingStart="5dp" />
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"/>
 
     <EditText
         android:id="@+id/etDireccionEvento"
@@ -87,9 +91,11 @@
         android:layout_marginEnd="15dp"
         android:background="@color/white"
         android:ems="10"
-        android:hint="Ingrese la dirección del evento (opcional)"
+        android:hint="@string/textoETDireccionEvento"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:paddingStart="5dp" />
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -98,6 +104,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="5dp"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -110,7 +117,7 @@
                 android:id="@+id/tvFecha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fecha:"
+                android:text="@string/textoTVFechaEvento"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -123,7 +130,8 @@
                 android:background="@color/white"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="DD/MM/AA"
+                android:hint="@string/textoETFechaEvento"
+                android:importantForAutofill="no"
                 android:inputType="date" />
 
         </LinearLayout>
@@ -138,7 +146,7 @@
                 android:id="@+id/tvHora"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hora:"
+                android:text="@string/textoTVHoraEvento"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -150,7 +158,8 @@
                 android:background="@color/white"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="00:00 P.M."
+                android:hint="@string/textoETHoraEvento"
+                android:importantForAutofill="no"
                 android:inputType="time" />
 
         </LinearLayout>
@@ -169,13 +178,13 @@
             android:id="@+id/tvCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Categoría:"
+            android:text="@string/textoTVCategoriaEvento"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spCategoria"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="5dp"
             android:layout_weight="1"
@@ -191,7 +200,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="5dp"
-        android:text="Descripción del evento:"
+        android:text="@string/textoTVDescripcionEvento"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -206,9 +215,11 @@
         android:background="@color/white"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Escriba la descripción de su evento"
+        android:hint="@string/textoETDescripcionEvento"
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
-        android:paddingStart="5dp" />
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"/>
 
     <Button
         android:id="@+id/btnContinuar2"
@@ -218,5 +229,5 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="5dp"
-        android:text="Continuar" />
+        android:text="@string/btnContinuar" />
 </LinearLayout>

@@ -16,7 +16,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="5dp"
-        android:text="ADMISIÓN:"
+        android:text="@string/textoTVAdmisionEvento"
         android:textSize="20sp"
         android:textStyle="bold"
         />
@@ -31,7 +31,7 @@
         android:id="@+id/tvpregunta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Cualquier persona puede asistir?"
+        android:text="@string/textoTVPregunta"
         android:textSize="18sp"
         android:textStyle="normal"
         android:layout_marginStart="15dp"
@@ -59,14 +59,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:checked="true"
-                android:text="Si" />
+                android:text="@string/textoSi" />
 
             <RadioButton
                 android:id="@+id/rbNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="No" />
+                android:text="@string/textoNo" />
         </RadioGroup>
 
         <LinearLayout
@@ -79,7 +79,7 @@
                 android:id="@+id/tvRangoEdad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rango de edad:"
+                android:text="@string/textoTVRangoEdad"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -92,7 +92,7 @@
                     android:id="@+id/tvEdadMinima"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mínima:"
+                    android:text="@string/TextoMinima"
                     android:textSize="18sp"
                     android:textStyle="normal" />
 
@@ -105,14 +105,17 @@
                     android:background="@color/white"
                     android:ems="10"
                     android:gravity="center"
+                    android:importantForAutofill="no"
                     android:inputType="number"
-                    android:text="--" />
+                    android:text="@string/filler__"
+                    tools:ignore="DuplicateSpeakableTextCheck,LabelFor" />
 
                 <CheckBox
                     android:id="@+id/ckbMinima"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -124,7 +127,7 @@
                     android:id="@+id/tvEdadMaxima"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Máxima:"
+                    android:text="@string/textoMaxima"
                     android:textSize="18sp"
                     android:textStyle="normal" />
 
@@ -137,14 +140,17 @@
                     android:background="@color/white"
                     android:ems="10"
                     android:gravity="center"
+                    android:importantForAutofill="no"
                     android:inputType="number"
-                    android:text="--" />
+                    android:text="@string/filler__"
+                    tools:ignore="LabelFor" />
 
                 <CheckBox
                     android:id="@+id/ckbMaxima"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
         </LinearLayout>
 
@@ -154,7 +160,7 @@
         android:id="@+id/swAceptarSolicitudManualmente"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Aceptar manualmente cada solicitud:"
+        android:text="@string/textoSWAceptarManualmente"
         android:textSize="18sp"
         tools:ignore="UseSwitchCompatOrMaterialXml"
         android:layout_marginStart="15dp"
@@ -168,7 +174,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="5dp"
-        android:text="REQUISITOS ADICIONALES:"
+        android:text="@string/textoTVRequisitosAdicionales"
         android:textSize="20sp"
         android:textStyle="bold"
         />
@@ -182,6 +188,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
@@ -194,13 +201,14 @@
             android:orientation="vertical"
             android:paddingTop="5dp"
             android:paddingStart="5dp"
+            android:paddingEnd="5dp"
             android:layout_weight="1">
 
             <TextView
                 android:id="@+id/tvAforo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aforo:"
+                android:text="@string/TextoTVAforo"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -213,7 +221,7 @@
                     android:id="@+id/tvAforoMinimo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mínimo:"
+                    android:text="@string/textoMinimo"
                     android:textSize="18sp"
                     android:textStyle="normal" />
 
@@ -225,8 +233,10 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:gravity="center"
+                    android:importantForAutofill="no"
                     android:inputType="number"
-                    android:text="--" />
+                    android:text="@string/filler__"
+                    tools:ignore="LabelFor" />
 
                 <CheckBox
                     android:id="@+id/ckbAforoMinimo"
@@ -244,7 +254,7 @@
                     android:id="@+id/tvAforoMaximo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Máxima:"
+                    android:text="@string/textoMaximo"
                     android:textSize="18sp"
                     android:textStyle="normal" />
 
@@ -256,8 +266,10 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:gravity="center"
+                    android:importantForAutofill="no"
                     android:inputType="number"
-                    android:text="--" />
+                    android:text="@string/filler__"
+                    tools:ignore="LabelFor" />
 
                 <CheckBox
                     android:id="@+id/ckbAforoMaximo"
@@ -274,14 +286,14 @@
             android:orientation="horizontal"
             android:layout_weight="1"
             android:paddingStart="5dp"
+            android:paddingEnd="5dp"
             >
 
             <Switch
                 android:id="@+id/swCancelarSiNoCumpleAforo"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Cancelar si no alcanza aforo mínimo:"
+                android:text="@string/textoSWCancelar"
                 android:textSize="18sp"
                 tools:ignore="UseSwitchCompatOrMaterialXml" />
 
@@ -300,7 +312,7 @@
             android:id="@+id/tvTiempoCancelacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Indique cuanto tiempo antes del evento cancelar:"
+            android:text="@string/textoTVTiempoCancelacion"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -321,25 +333,28 @@
                     android:id="@+id/etMeses"
                     android:layout_width="50dp"
                     android:layout_height="48dp"
-                    android:inputType="number"
-                    android:gravity="center"
-                    android:text="00"
                     android:background="@drawable/borde"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
                     android:maxLength="2"
-                    android:textSize="18sp"/>
+                    android:text="@string/filler00"
+                    android:textSize="18sp"
+                    tools:ignore="DuplicateSpeakableTextCheck,LabelFor" />
 
                 <TextView
                     android:id="@+id/tvMeses"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Meses"
+                    android:text="@string/textoMeses"
                     android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:importantForAutofill="no"
                 android:orientation="vertical"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
@@ -349,19 +364,21 @@
                     android:id="@+id/etDias"
                     android:layout_width="50dp"
                     android:layout_height="48dp"
+                    android:importantForAutofill="no"
                     android:inputType="number"
                     android:gravity="center"
-                    android:text="00"
+                    android:text="@string/filler00"
                     android:background="@drawable/borde"
                     android:maxLength="2"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    tools:ignore="LabelFor" />
 
                 <TextView
                     android:id="@+id/tvDias"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Días"
+                    android:text="@string/textoDias"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -375,25 +392,28 @@
                     android:id="@+id/etHoras"
                     android:layout_width="50dp"
                     android:layout_height="48dp"
+                    android:importantForAutofill="no"
                     android:inputType="number"
                     android:gravity="center"
-                    android:text="00"
+                    android:text="@string/filler00"
                     android:background="@drawable/borde"
                     android:maxLength="2"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    tools:ignore="LabelFor" />
 
                 <TextView
                     android:id="@+id/tvHoras"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Horas"
+                    android:text="@string/textoHoras"
                     android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:importantForAutofill="no"
                 android:orientation="vertical"
                 android:layout_marginStart="8dp"
                 android:gravity="center_horizontal">
@@ -402,19 +422,21 @@
                     android:id="@+id/etMinutos"
                     android:layout_width="50dp"
                     android:layout_height="48dp"
+                    android:importantForAutofill="no"
                     android:inputType="number"
                     android:gravity="center"
-                    android:text="00"
+                    android:text="@string/filler00"
                     android:background="@drawable/borde"
                     android:maxLength="2"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    tools:ignore="LabelFor" />
 
                 <TextView
                     android:id="@+id/tvMinutos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Minutos"
+                    android:text="@string/textoMinutos"
                     android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
@@ -425,7 +447,7 @@
         android:id="@+id/swGaleria"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Galería del evento"
+        android:text="@string/textoSWGaleriaEvento"
         android:textSize="18sp"
         tools:ignore="UseSwitchCompatOrMaterialXml"
         android:layout_marginStart="15dp"
@@ -435,7 +457,7 @@
         android:id="@+id/swPermitirSubirFotos"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Permitir que asistentes añadan fotos"
+        android:text="@string/textoSWPermitirSubirFotos"
         android:textSize="18sp"
         tools:ignore="UseSwitchCompatOrMaterialXml"
         android:layout_marginStart="15dp"
@@ -449,6 +471,6 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="5dp"
-        android:text="Continuar" />
+        android:text="@string/btnContinuar" />
 
 </LinearLayout>
