@@ -38,6 +38,7 @@
                     android:layout_height="30dp"
                     android:layout_gravity="bottom|end"
                     android:layout_margin="10dp"
+                    android:importantForAccessibility="no"
                     app:srcCompat="@drawable/editartexto" />
             </FrameLayout>
 
