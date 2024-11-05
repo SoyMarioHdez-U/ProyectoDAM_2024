@@ -72,4 +72,7 @@ public class MainActivity extends AppCompatActivity {
         Intent registrarse = new Intent(MainActivity.this, Registrarse.class);
         startActivity(registrarse);
     }
+
+    public void MostrarIngresar(View view) {
+    }
 }
