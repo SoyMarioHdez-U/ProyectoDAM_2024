@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 // Verificación de credenciales
                 if (usuario.equals("usuario") && password.equals("12345678")) {
                     // Credenciales correctas, abrir HomeActivity
-                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    Intent intent = new Intent(MainActivity.this, Categorias.class);
                     startActivity(intent);
                     finish(); // Opcional, para cerrar la pantalla de login
                 } else {

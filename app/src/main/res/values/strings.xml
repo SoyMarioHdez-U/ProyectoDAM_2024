@@ -46,4 +46,9 @@
     <string name="ValorDefaultPrecioVIP">12.00</string>
     <string name="textoTVAdvertencia">El manejo de los cobros es completa responsabilidad del organizador</string>
     <string name="textoBtnCrearEvento">Crear evento</string>
+    <string name="tx_cat_musica">MÚSICA</string>
+    <string name="tx_cat_religoso">RELIGIOSO</string>
+    <string name="tx_cat_deportes">DEPORTES</string>
+    <string name="tx_cat_cultura">CULTURA</string>
+
 </resources>
